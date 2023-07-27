@@ -51,6 +51,7 @@ def search(driver, search_term):
             print("Error: Wrong result present in search")
             return []
     print("Search results validated!")
+    print(f"Searched list: {search_list}, len={len(search_list)}")
     time.sleep(timeout)
     
     
