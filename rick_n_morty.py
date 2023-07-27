@@ -25,7 +25,7 @@ def login(driver, username, password):
     login_button = driver.find_element(By.XPATH,  "//button")
     login_button.click()
     time.sleep(timeout)
-    print("user is logged in application")
+    print("User is logged in application")
 
 def search(driver, search_term):
     search_field = driver.find_element(By.XPATH, "//input")
@@ -56,7 +56,7 @@ def search(driver, search_term):
     
 def scroll_to_top(driver):
     action = ActionChains(driver)
-    print("invoking scroll to top")
+    print("Scrolling to top")
     while True:
         for_parent_of_first = driver.find_elements(By.XPATH, "//div[@data-rowindex = '1']")
         res = driver.find_elements(By.XPATH, '//div[@data-field="name"]/div[text()]')
@@ -94,7 +94,7 @@ def sorting_a(driver):
         print("Ascending Sort Validated!")
     else:
         print("Error: Ascending Sort Failed!")
-    print(f"sorted-list = {sort_list}")
+    # print(f"sorted-list = {sort_list}")
     time.sleep(timeout)
 
 def sorting_d(driver):
@@ -124,7 +124,7 @@ def sorting_d(driver):
         print("Descending Sort Validated!")
     else:
         print("Error: Descending Sort Failed!")
-    print(f"sorted-list = {sort_list}")
+    # print(f"sorted-list = {sort_list}")
     time.sleep(timeout)
 
 driver = open_demo_website()
